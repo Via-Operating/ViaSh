@@ -8,4 +8,5 @@
 #include <term/viaSh/info.h>
 #include <term/viaSh/ld.h>
 #include <term/viaSh/shutdown.h>
+#include <term/viaSh/credits.h>
 #endif
