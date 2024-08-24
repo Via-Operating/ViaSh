@@ -1,11 +1,13 @@
 #include <via/stdio.h>
 
-void list_dir()
+void list_dir(struct RIFS_F* a)
 {
-	terminal_setcolor(vga_entry_color(VGA_COLOR_RED, VGA_COLOR_BLACK));
-	printf("\n[ERROR] ");
-	terminal_setcolor(vga_entry_color(VGA_COLOR_WHITE, VGA_COLOR_BLACK));
-	printf("Unimplemented RIFS\n");
+	printf("\nDirectory: / \n");
+
+	for(int i = 0; i < 3; i++)
+	{
+		VDK_InterpretFile(a[i].metadata);
+	}
 
 	printf("> ");
 }
